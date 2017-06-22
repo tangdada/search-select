@@ -1,6 +1,6 @@
 {
   "name": "search-select",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "angular search select",
   "main": "index.js",
   "scripts": {
