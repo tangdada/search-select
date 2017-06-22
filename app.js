@@ -13,4 +13,12 @@ app.controller('MainCtrl', function($scope, $timeout) {
 
   $scope.showBottom = '编辑列表1';
 
+  $scope.handleBottomClick = function() {
+    alert('handleBottomClick');
+  }
+
+  $scope.testSelect = function(opt) {
+    alert(opt.name);
+  }
+
 });

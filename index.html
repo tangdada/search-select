@@ -9,7 +9,7 @@
   <body ng-controller="MainCtrl">
 
     <div>{{testStr}}</div>
-    <search-select select-option="selectOption" options="options" label="体检中心:" show-bottom="showBottom"><search-select>
+    <search-select select-option="selectOption" on-select="testSelect(opt)" options="options" label="体检中心:" show-bottom="showBottom" handle-bottom-click="handleBottomClick()"><search-select>
 
   </body>
 </html>
