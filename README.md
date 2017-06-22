@@ -1,11 +1,10 @@
 # search-select
 angular select search
 
-directive props: {
-  onSelect: '&',
-  handleBottomClick: '&',
-  selectOption: '=',
+directive props:
+  on-select: '&',
+  handle-bottom-click: '&',
+  select-option: '=',
   options: '=',
-  showBottom: '=',
+  show-bottom: '=',
   label: '@'
-}
