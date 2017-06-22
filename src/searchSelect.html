@@ -1,0 +1,16 @@
+<div class="search-select">
+    <div class="search-select-head">
+
+      <span class="search-select-label">{{ssCtrl.label}}</span>
+      <input ng-click="ssCtrl.showBody($event)" ng-change="ssCtrl.filterOpt(ssCtrl.selectOption.name)" type="text" class="search-select-input" aria-describedby="basic-addon3" title="{{ssCtrl.selectOption.name}}" ng-model="ssCtrl.selectOption.name">
+      <span class="u-icon-arr" ng-click="ssCtrl.showList = !ssCtrl.showList" ng-class="{'u-icon-arrU': ssCtrl.showList, 'u-icon-arrD': !ssCtrl.showList}"></span>
+    </div>
+
+    <div class="search-select-body" ng-show="ssCtrl.showList">
+      <div class="search-select-list">
+        <div ng-show="!opt.hide" ng-class="{'on': ssCtrl.selectOption && ssCtrl.selectOption.id == opt.id}" ng-repeat="opt in ssCtrl.options" ng-click="ssCtrl.handleClick(opt)">{{opt.name}}</div>
+      </div>
+      <div ng-if="!!ssCtrl.showBottom" ng-click="ssCtrl.bottomClick()" class="search-select-bottom"><a href="javascript:void(0)"><i class="glyphicon glyphicon-plus greenfont"></i> {{ssCtrl.showBottom}}</a></div>
+    </div>
+
+</div>
