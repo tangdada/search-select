@@ -8,3 +8,6 @@ directive props:
   options: '=',
   show-bottom: '=',
   label: '@'
+
+
+npm install search-select
